@@ -169,8 +169,38 @@ td {
     input {
         font-size: 24px;
     }
+
+
 }
+
+
 
 .denari {
     color: grey;
 }
+
+@media (max-width: 900px) {
+    .roki {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .roki label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .flex-container-left {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+/* .roki {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */

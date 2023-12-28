@@ -78,3 +78,31 @@ checkBtns.forEach((btn) => {
     boldSmileFaceCheck(btn);
   });
 });
+
+// Add this JavaScript code to your existing script.js
+window.addEventListener("resize", () => {
+  const form = document.querySelector(".form");
+  const h1Element = document.createElement("h1");
+  h1Element.textContent = "BUY FROM BULGARIA, HRVATSKA, ETC.";
+  h1Element.style.textAlign = "center";
+
+  if (window.innerWidth <= 900) {
+    // If screen width is less than or equal to 900px
+    form.innerHTML = ""; // Clear the existing content of the form
+    form.appendChild(h1Element); // Append the new h1 element
+  } else {
+    // If screen width is greater than 900px
+    form.innerHTML = `
+      <p class="p-input">Начин на испорака: </p>
+                            <input type="radio" name="isporaka" id="isporakaCentar">
+                            <label class="label-width" for="isporakaCentar">Во дистрибутивен центар </label>
+                            <input type="radio" name="isporaka" id="isporakaPosta">
+                            <label for="isporakaPosta">Пошта</label>
+                            <input type="radio" name="isporaka" id="isporakaKurir">
+                            <label class="label-width" for="isporakaKurir">Со курирска услуга </label>
+    `;
+  }
+});
+
+// Trigger the event on page load to initialize the content based on the window width
+window.dispatchEvent(new Event("resize"));
