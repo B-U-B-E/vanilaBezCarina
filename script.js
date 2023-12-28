@@ -83,7 +83,8 @@ checkBtns.forEach((btn) => {
 window.addEventListener("resize", () => {
   const form = document.querySelector(".form");
   const h1Element = document.createElement("h1");
-  h1Element.textContent = "BUY FROM BULGARIA, HRVATSKA, ETC.";
+  h1Element.textContent =
+    "BUY FROM MACEDONIAN PEOPLE BULGARIAN OFFICE, CROATIAN OFFICE, GREEK OFFICE... ETC.";
   h1Element.style.textAlign = "center";
 
   if (window.innerWidth <= 900) {
