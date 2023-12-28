@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQUASOURCE FORM</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/bubePlav.ico" type="image/x-icon">
+
+
+</head>
+
+<!-- i vo react mozam da go napravam, no nema potreba -->
+<!-- I DA DRUGAR TOP SUM FALA NA PRASANJE-->
+
+<body>
+
+    <section id="distributerForm">
+        <div class="container">
+            <div class="flex-container">
+                <div class="flex-20 logo flex-container">
+                    <img src="./images/aqua.jpg" alt="">
+                </div>
+                <div class="flex-80">
+                    <h1>ДИСТРИБУТЕРСКИ ФОРМУЛАР ЗА ПОРАЧКА</h1>
+                    <form action="">
+                        <div class="flex-container-left">
+                            <label class="p-input" for="distributorName">Име на дистрибутерот:</label>
+                            <input type="text" id="distributorName" name="distributorName">
+                        </div>
+
+                        <div class="flex-container-left">
+                            <label class="p-input" for="distributorBroj">Дистрибутерски број:</label>
+                            <input type="text" id="distributorBroj" name="distributorBroj">
+                        </div>
+
+                        <div class="flex-container-left">
+                            <label class="p-input" for="korisnikName">Име на корисник:</label>
+                            <input type="text" id="korisnikName" name="korisnikName">
+                        </div>
+
+                        <div class="flex-container-left">
+                            <label class="p-input" for="adresa">Адреса на корисникот:</label>
+                            <input type="text" id="adresa" name="adresa">
+                        </div>
+
+                        <div class=" flex-container-info">
+                            <div class="flex-33 ">
+                                <div class="flex-container-info info-inner">
+                                    <label class="p-input" for="grad">Град:</label>
+                                    <input type="text" id="grad" name="grad">
+                                </div>
+                            </div>
+
+                            <div class="flex-33 ">
+                                <div class="flex-container-info info-inner">
+                                    <label class="p-input-info" for="faks">Поштeнски факс:</label>
+                                    <input type="text" id="faks" name="faks">
+                                </div>
+                            </div>
+
+                            <div class="flex-33 ">
+                                <div class="flex-container-info info-inner">
+                                    <label class="p-input-info">Тел:</label>
+                                    <input type="text" id="tel" name="tel">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- FORM -->
+                        <div class="form flex-container-left">
+                            <p class="p-input">Начин на испорака: </p>
+                            <input type="radio" name="isporaka" id="isporakaCentar">
+                            <label class="label-width" for="isporakaCentar">Во дистрибутивен центар </label>
+                            <input type="radio" name="isporaka" id="isporakaPosta">
+                            <label for="isporakaPosta">Пошта</label>
+                            <input type="radio" name="isporaka" id="isporakaKurir">
+                            <label class="label-width" for="isporakaKurir">Со курирска услуга </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Шифра</th>
+                        <th>CV</th>
+                        <th>QV</th>
+                        <th></th>
+                        <th>Производи</th>
+                        <th>Цена за дистрибутер</th>
+                        <th>Количина</th>
+                        <th>Вкупно</th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- <tr>PROIZVODI</tr> -->
+
+                </tbody>
+            </table>
+
+            <div style="text-align: center;">
+                <h2 class="totalQuantity">Вкупно производи: <span>0</span></h2>
+                <h2 class="totalCost">Вкупно: <span>0</span> <span class="denari">денари</span></h2>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

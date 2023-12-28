@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+}
+
+p,
+h1 {
+    margin: 13px 0 13px 0;
+}
+
+
+.container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo {
+    margin-right: 13px;
+}
+
+.flex-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container-left {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.flex-container-info {
+    display: flex;
+    align-items: center;
+
+}
+
+.flex-container-column {
+    display: flex;
+    flex-flow: column;
+
+}
+
+.flex-50 {
+
+    flex: 0 0 50%;
+}
+
+
+.flex-20 {
+    flex: 0 1 20%;
+
+}
+
+.flex-80 {
+    flex: 0 0 80%;
+}
+
+.flex-33 {
+    flex: 0 1 33.333%;
+}
+
+.p-input {
+    min-width: 160px;
+}
+
+.flex-container-left input {
+    width: 100%;
+
+}
+
+.flex-container-info input {
+    width: 100%;
+}
+
+.flex-33:not(:last-child) {
+    margin-right: 13px;
+
+}
+
+.p-input-info {
+    min-width: fit-content;
+}
+
+.label-width {
+    min-width: 180px;
+}
+
+.form {
+    margin-top: 7px;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+}
+
+table {
+    margin-top: 23px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+}
+
+.btn {
+    padding: 0;
+
+}
+
+.btn button {
+    width: 100%;
+    height: 60px;
+    background: none;
+    border: none;
+}
+
+@media(max-width:1200px) {
+    .proizvodi {
+        min-width: 100% !important;
+    }
+}
+
+@media(max-width:900px) {
+
+    th,
+    td {
+
+        padding: 3px;
+        font-size: 13px;
+    }
+
+    .flex-container-left {
+
+        flex-direction: column;
+
+    }
+
+    .flex-container-info {
+        display: block;
+    }
+
+    .flex-33:not(:last-child) {
+        margin-right: 0;
+    }
+
+
+    .flex-container {
+        display: block;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    input {
+        font-size: 24px;
+    }
+}
+
+.denari {
+    color: grey;
+}
